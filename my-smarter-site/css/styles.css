@@ -28,3 +28,26 @@ p.important {
 .red {
   color: red;
 }
+
+p.more-space {
+  letter-spacing: .2em;
+  word-spacing: 1.5em;
+  line-height: 2.4em;
+}
+
+h3 {
+  text-align: center;
+}
+
+p.justify {
+  text-align: justify;
+}
+
+p.indent {
+  text-indent: 1em;
+}
+
+blockquote {
+  font-size: .85em;
+  color: dimgray;
+}
