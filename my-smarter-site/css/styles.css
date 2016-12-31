@@ -184,11 +184,12 @@ div#on-the-right {
 
 div#header {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 0;
   left: 0;
   text-align: left;
-  padding: 2%;
+  padding: 1%;
   background-color: paleturquoise;
   font-family: Trebuchet, Verdana, sans-serif;
   font-size: 1em;
@@ -196,12 +197,20 @@ div#header {
   color: dimgray;
 }
 
-div#header img {
-  float: left;
-  margin: 1em;
-  margin-top: 2.6em;
+div#invisible-header {
+  width: 100%;
+  visibility: hidden;
 }
 
-div#header h1, h2 {
-  padding-top: 2%;
+div#header h1, div#invisible-header h1 {
+  padding-top: 1%;
+}
+div#header img, div#invisible-header img {
+  float: left;
+  margin: 1em;
+  margin-top: 1.85em;
+}
+
+p.clearFloat {
+  clear: both;
 }
