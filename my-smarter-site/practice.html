@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <h1>Learning</h1>
+    <h1 id="back-to-top">Learning</h1>
     <h2>HTML and CSS</h2>
     <p class="Georgia">This a multi-line paragraph where I am first starting out learning HTML and CSS, by reading and going through coding challenges here, as well as completing online exercises, in the <i>A Smarter Way to Learn HTML and CSS</i> book by Mark Myers. I think the short chapers, writing style, and coding practice works pretty well for me. After I'm done writing this paragraph I'm going to check to see how it looks in the browser. It turned out it wasn't really "multi-line," after all, so here's some more text. The right edges of this paragraph will be pretty ragged because it is not justified. And the first line, by default, is not indented.</p>
     <p class="important">Warning: we have no slow lorises here.</p>
@@ -37,5 +37,23 @@
     <img class="wrap-to-the-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
     <p>Here's a short paragraph to go to the left side of the loris image, which is floating right.</p>
     <p class="clears-the-wrap">Here's a short paragraph that should clear the wrap and be on the next line below the image.</p>
+    <h2>Working with Links</h2>
+    <a href="http://www.stackoverflow.com">Link to Stack Overflow Homepage</a>
+    <p>The link works! But it opens in the same window.</p>
+    <p>Here's a paragraph that takes the user to the <a href="http://www.asmarterwaytolearn.com/why-exercises.html">Why Exercises</a> page at asmarterwaytolearn.com, also in the same window. (Yay, it works!)</p>
+    <p>Here's a link to go <a href="#back-to-top">Back to the Top</a> of this page, by assigning an ID to the h1 tag at the very top of this page.</p>
+    <p>Here's a link to the <a href="http://www.asmarterwaytolearn.com" target="_blank">author's website</a> that will open in a new window (finally! And it works!)</p>
+    <p>Below is some Javascript to open a small window, like you often see on sites for Help topics, etc., that will lay on top and appears more like an addendum to the main window. It should work when you click the paragraph, but it's not for some reason. It opens in a new window, but not a small, separate one that lays on top. Will have to troubleshoot more.</p>
+    <p id="helpWindow"><a href="#helpWindow">Small Window to Open Help Topics</a></p>
+    <script type="text/javascript">
+    document.getElementById("helpWindow").onclick = helpWindow;
+    function helpWindow() {
+        var w = window.open("practice.html", "",
+    "width=100,height=200,left=350,top=300");
+    }
+    </script>
+    <p>Now we've made all links gray and, when hovered over, orange. If I were going to use the hexadecimal type in the css file, it would be color: #b8860b; for example.</p>
+    <p>And here's a Robo Guy image. When you click on it, it will take you to asmarterwaytolearn.com in a new window using target="_blank" on the end of the anchor tag:</p>
+    <a href="http://www.asmarterwaytolearn.com" target="_blank"><img src="http://www.asmarterwaytolearn.com/robo_guy.png"></a>
   </body>
 </html>
