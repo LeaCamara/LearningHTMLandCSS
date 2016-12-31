@@ -130,3 +130,35 @@ li {
 div#special > p {
   font-size: 2em;
 }
+
+/*
+The CSS below specifies styling for the form as a whole.
+It also specifies styling for specific input types, as well as
+the legend and fieldset.
+*/
+
+form {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.2em;
+}
+
+input[type="text"], textarea {
+  font-size: 2em;
+  padding: .2em;
+  border: 3px solid turquoise;
+}
+
+input[type="submit"] {
+  font-size: 2.5em;
+}
+
+legend {
+  font-weight: 700;
+}
+
+fieldset {
+  border: 5px solid darkmagenta;
+  color: darkblue;
+}

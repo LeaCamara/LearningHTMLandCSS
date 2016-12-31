@@ -78,28 +78,45 @@
         <li>Boy, J</li>
         <li>There is no #7, but I'm going to add some more text here to show the difference between having the list-style-position set to outside vs. inside. I definitely like outside (like this) much better.</li>
     </ol>
+
+    <!--
+    The html below creates a form where users can send their name and a message.
+    They can also provide additional info via radio buttons, checkboxes, and a selection list.
+    -->
     <form>
-        First Name:
-        <br>
-        <input type="text" name="firstName" size="25" maxlength="40">
-        <br><br>
-        How did you find us?
-        <br>
-        <input type="radio" name="referral" value="Word of Mouth" checked="checked"> Word of Mouth
-        <input type="radio" name="referral" value="Advertisement"> Advertisement
-        <br><br>
-        What do you think of this page so far?
-        <br>
-        <input type="checkbox" name="feedback" value="awesome" checked="checked"> Awesome!
-        <input type="checkbox" name="feedback" value="okay"> It's Okay
-        <input type="checkbox" name="feedback" value="terrible"> Terrible
-        <br><br>
-        Message:
-        <br>
-        <textarea name="message" rows="4" cols="30"></textarea>
-        <br><br>
-        <input type="submit" value="Send message">
-        <br><br>
+        <fieldset>
+            <legend>Name and Message</legend>
+            First Name:
+            <br>
+            <input type="text" name="firstName" size="25" maxlength="40">
+            <br><br>
+            Message:
+            <br>
+            <textarea name="message" rows="4" cols="30"></textarea>
+            <br><br>
+            <input type="submit" value="Send message">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Info</legend>
+            How did you find us?
+            <br>
+            <label><input type="radio" name="referral" value="Word of Mouth" checked="checked"> Word of Mouth</label>
+            <label><input type="radio" name="referral" value="Advertisement"> Advertisement</label>
+            <br><br>
+            What do you think of this page so far?
+            <br>
+            <input type="checkbox" name="feedback" id="awesome" value="awesome" checked="checked"><label for="awesome">Awesome!</label>
+            <input type="checkbox" name="feedback" id="okay" value="okay"> <label for="okay">It's Okay</label>
+            <input type="checkbox" name="feedback" id="terrible" value="terrible"><label for="terrible">Terrible</label>
+            <br><br>
+            Your state: <br>
+            <select name="currentState">
+                <option value="selectState" select="selected">Select a State</option>
+                <option value="TN">Tennessee</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
     </form>
   </body>
 </html>
