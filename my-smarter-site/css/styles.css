@@ -108,3 +108,25 @@ a {
 a:hover {
   color: orange;
 }
+
+ul {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: darkmagenta;
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+ol {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: turquoise;
+  list-style-position: outside;
+  list-style-type: decimal-leading-zero;
+}
+
+li {
+  margin: 1.5em;
+}
+
+div#special > p {
+  font-size: 2em;
+}
