@@ -74,3 +74,29 @@ div#special {
   margin-right:a 3em;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+img.block_img {
+  display: block;
+}
+
+img.move_right {
+  margin-left: 1.5em;
+}
+
+img.smack-in-the-middle {
+  margin: 0 auto 0 auto;
+}
+
+img.wrap-to-the-right {
+  float: left;
+  margin: 0 .75em .5em 0;
+}
+
+img.wrap-to-the-left {
+  float: right;
+  margin: 0 0 .5em .75em;
+}
+
+p.clears-the-wrap {
+  clear: both;
+}

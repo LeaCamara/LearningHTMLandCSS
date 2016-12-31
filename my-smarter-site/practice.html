@@ -27,7 +27,15 @@
       <p>Both the heading above and this paragraph are children of a div with the ID, "special," since this is unique and will appear only once on this page. There are 3em margins on the left and right, and the font-family starts with Arial.... So.... why is this text serif and not Arial/sans-serif?? It does look like it has a right margin, though, so that's good. I tried a hard refresh, but that didn't work. I figured out that it was because I had specified above that all paragraphs would have the Georgia font. So I made that a class instead, which enabled this div inheritance to work. It still seems strange how the paragraph styling way up above overrode the div styling, though.</p>
     </div>
     <h2>Images</h2>
-    <img src="http://www.asmarterwaytolearn.com/loris.jpg">
-    <p>Practice placing an image in between the heading above and this paragraph. It should be aligned all the way to the left.</p>
+    <img class="block_img" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="250" height="197">
+    <img class="block_img move_right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+    <img class="block_img smack-in-the-middle" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+    <p>Practice placing an image in between the heading above and this paragraph. It should be aligned all the way to the left. But now we used CSS to make it a block element and then copied it. And added alt tags and resized the 2nd one to be half the size of the first one. And moved the 2nd one a little to the right by adding margin-left. And now we have a 3rd one that's centered.</p>
+    <img class="wrap-to-the-right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+    <p>Here's a short paragraph to go to the right side of the loris image, which is floating left.</p>
+    <p class="clears-the-wrap">Here's a short paragraph that should clear the wrap and be on the next line below the image.</p>
+    <img class="wrap-to-the-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+    <p>Here's a short paragraph to go to the left side of the loris image, which is floating right.</p>
+    <p class="clears-the-wrap">Here's a short paragraph that should clear the wrap and be on the next line below the image.</p>
   </body>
 </html>
