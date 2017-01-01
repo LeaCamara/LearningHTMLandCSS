@@ -8,6 +8,14 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
 p.important {
   font-size: 1.5em;
   font-weight: 900;
@@ -191,7 +199,7 @@ div#header {
   top: 0;
   left: 0;
   text-align: left;
-  padding: 1%;
+  padding: .5%;
   background-color: paleturquoise;
   font-family: Trebuchet, Verdana, sans-serif;
   font-size: 1em;
@@ -261,9 +269,9 @@ div#horizontal-navbar ul li {
   /* background-color: dimgray; */
   text-align: center;
   display: inline;
-  width: 30%;
+  width: 25%;
   float: left;
-  margin-right: .1em;
+  margin-right: .05em;
   /* margin-right: 0 auto 0 auto; */
 }
 
@@ -292,6 +300,26 @@ li.changebackground:active {
 body {
   background-image: url("http://www.asmarterwaytolearn.com/monarch.jpg");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right bottom;
   background-attachment: fixed;
+}
+
+div.lesswideandtotheright {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  position: relative;
+  left: 20%;
+}
+
+p.evenlesswide {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+div.z-index {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }

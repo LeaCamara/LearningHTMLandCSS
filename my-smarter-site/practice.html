@@ -10,12 +10,10 @@
         <p class="clearFloat"></p>
         <br>
     </div>
-<!--
     <div id="header">
         <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47">
         <h1>Practice with "A Smarter Way to Learn HTML and CSS"</h1>
     </div>
--->
     <div>
         <h2 id="back-to-top">Practice Page</h2>
         <p class="Georgia">This is a multi-line paragraph. These are my first baby steps starting to learn HTML and CSS, by reading and going through coding challenges here, as well as completing online exercises, in the <i>A Smarter Way to Learn HTML and CSS</i> book by Mark Myers. I think the short chapers, writing style, and coding practice works pretty well for me. After I'm done writing this paragraph I'm going to check to see how it looks in the browser. It turned out it wasn't really "multi-line," after all, so here's some more text. The right edges of this paragraph will be pretty ragged because it is not justified. And the first line, by default, is not indented.</p>
@@ -158,6 +156,7 @@
                 <li><a href="https://photos.google.com/">Google Photos</a></li>
             </ul>
         </div>
+        <h2>Working with Horizontal Navbars</h2>
         <div id="horizontal-navbar">
             <ul>
                 <li class="changebackground"><a href="https://www.google.com/">Google</a></li>
@@ -165,6 +164,27 @@
                 <li class="changebackground"><a href="https://photos.google.com/">Google Photos</a></li>
             </ul>
         </div>
-    </div>
+        <p class="clearFloat">
+        <h2>Ems vs. Percentages vs. Pixels</h2>
+        <div class="lesswideandtotheright">
+            <p class="evenlesswide">This is a p with the class "evenlesswide". Ems and percentages are more responsive and preferable in most cases, but pixels are good for images, borders, and positioning.</p>
+            <p>These are p's that are just the width of the div. I still need to get some clarification on the different types of code used to center things, since the syntax is different depending on the type of element (divs, paragraphs, images, text, etc).
+            <br>
+            If it's a paragraph, a heading, or text inside a navbar div, use text-align: center;
+            <br>
+            If it's a div, image, or form: use margin: 0 auto 0 auto;
+            <br>
+            But for the "evenlesswide" paragraph above, I did text-align: center; to center the text in the paragraph. Then margin: 0 auto 0 auto; to center the paragraph inside the div.
+            </p>
+            <p>Another problem: There seems to be some inherited styling somewhere that makes the browser think that the width of the horizontal navbar is narrower than it is. But I haven't been able to find it yet, even after comparing my code with the author's.... Hmmm...</p>
+        </div>
+        <h2>Relative and Static Positioning</h2>
+        <p>Both can create some overlap. Relative positioning places elements a certain distance from their normal position. Absolute and fixed/static positioning places elements a certain distance from the edges of the browser window.
+        The div above is getting nudged more to the right with relative positioning.</p>
+        <div class="z-index">
+            <img src="http://www.asmarterwaytolearn.com/monarch.jpg" alt="monarch at the bottom">
+        </div>
+        <h2>Z-Index</h2>
+        <p>I used a z-index of -1 to put the monarch at the bottom left behind everything else on the page. Pretty cool!</p>
   </body>
 </html>
