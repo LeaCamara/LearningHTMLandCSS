@@ -8,11 +8,7 @@ h1 {
   font-size: 2em;
 }
 
-h2 {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-p {
+h2, p {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -126,7 +122,7 @@ ul {
 
 ol {
   font-family: "Trebuchet MS", Arial, sans-serif;
-  color: turquoise;
+  color: darkblue;
   list-style-position: outside;
   list-style-type: decimal-leading-zero;
 }
@@ -205,6 +201,7 @@ div#header {
   font-size: 1em;
   font-weight: 900;
   color: dimgray;
+  z-index: 2;
 }
 
 div#invisible-header {
@@ -256,6 +253,7 @@ div#horizontal-navbar {
   /* clear: both; */
   /* display: inline-block; */
   width: 100%;
+  margin: 0 auto 0 auto;
 }
 
 div#horizontal-navbar ul {
@@ -272,7 +270,6 @@ div#horizontal-navbar ul li {
   width: 25%;
   float: left;
   margin-right: .05em;
-  /* margin-right: 0 auto 0 auto; */
 }
 
 div#horizontal-navbar ul li a {
@@ -297,11 +294,14 @@ li.changebackground:active {
   background-color: darkblue;
 }
 
+/* to add a monarch as a background img on the bottom right: */
+
 body {
-  background-image: url("http://www.asmarterwaytolearn.com/monarch.jpg");
+  background-ima  ge: url("http://www.asmarterwaytolearn.com/monarch.jpg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-attachment: fixed;
+  z-index: 0;
 }
 
 div.lesswideandtotheright {
@@ -309,6 +309,7 @@ div.lesswideandtotheright {
   margin: 0 auto 0 auto;
   position: relative;
   left: 20%;
+  z-index: 0;
 }
 
 p.evenlesswide {
@@ -322,4 +323,23 @@ div.z-index {
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+@media only screen and (min-device-width: 800px) {
+ p.test {
+   font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+}
+
+p.maxwidthheight {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: scroll;
+  margin: 0 auto 0 auto;
+}
+
+div.nudgeleft {
+  position: relative;
+  bottom: 0%;
+  left: 10%;
 }

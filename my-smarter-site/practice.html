@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>Practice</title>
+    <meta name="description" content="Examples to help you get started with basic coding in HTML and CSS.">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
@@ -54,7 +57,7 @@
         <p>Here's a paragraph that takes the user to the <a href="http://www.asmarterwaytolearn.com/why-exercises.html">Why Exercises</a> page at asmarterwaytolearn.com, also in the same window. (Yay, it works!)</p>
         <p>Here's a link to go <a href="#back-to-top">Back to the Top</a> of this page, by assigning an ID to the h1 tag at the very top of this page.</p>
         <p>Here's a link to the <a href="http://www.asmarterwaytolearn.com" target="_blank">author's website</a> that will open in a new window (finally! And it works!)</p>
-        <p>Below is some Javascript to open a small window, like you often see on sites for Help topics, etc., that will lay on top and appears more like an addendum to the main window. It should work when you click the paragraph, but it's not for some reason. It opens in a new window, but not a small, separate one that lays on top. Will have to troubleshoot more.</p>
+        <p>Below is some Javascript to open a small window, like you often see on sites for Help topics, etc., that will lay on top and appears more like an addendum to the main window. It should work when you click the paragraph, but it's not for some reason. It opens in a new window, but not a small, separate one that lays on top. I might have to wait to figure this out when learning Javascript.</p>
         <p id="helpWindow"><a href="#helpWindow">Small Window to Open Help Topics</a></p>
         <script type="text/javascript">
         document.getElementById("helpWindow").onclick = helpWindow;
@@ -147,7 +150,7 @@
         </div>
         <br>
         <h2>Working with Headers</h2>
-        <p>The first header I created (C65) covered over the beginning text. So I put all the non-header text inside another div, and that still didn't fix it. He says we'll do with that two chapters from now.</p>
+        <p>The first header I created (C65) covered over the beginning text. So I put all the non-header text inside another div, and that still didn't fix it. He says we'll do with that two chapters from now. (Update: We created a spacer header to fix this.)</p>
         <h2>Working with Vertical Navbars</h2>
         <div id="vertical-navbar">
             <ul>
@@ -156,6 +159,7 @@
                 <li><a href="https://photos.google.com/">Google Photos</a></li>
             </ul>
         </div>
+        <p class="clears-the-wrap">
         <h2>Working with Horizontal Navbars</h2>
         <div id="horizontal-navbar">
             <ul>
@@ -174,9 +178,9 @@
             <br>
             If it's a div, image, or form: use margin: 0 auto 0 auto;
             <br>
-            But for the "evenlesswide" paragraph above, I did text-align: center; to center the text in the paragraph. Then margin: 0 auto 0 auto; to center the paragraph inside the div.
+            Or both. For the "evenlesswide" paragraph above, I did text-align: center; to center the text in the paragraph. Then margin: 0 auto 0 auto; to center the paragraph inside the div.
             </p>
-            <p>Another problem: There seems to be some inherited styling somewhere that makes the browser think that the width of the horizontal navbar is narrower than it is. But I haven't been able to find it yet, even after comparing my code with the author's.... Hmmm...</p>
+            <p><em>However,</em> there seems to be some inherited styling somewhere that makes the browser think that the width of the horizontal navbar is narrower than it is. But I haven't been able to find it yet, even after comparing my code with the author's.... Hmmm...</p>
         </div>
         <h2>Relative and Static Positioning</h2>
         <p>Both can create some overlap. Relative positioning places elements a certain distance from their normal position. Absolute and fixed/static positioning places elements a certain distance from the edges of the browser window.
@@ -186,5 +190,14 @@
         </div>
         <h2>Z-Index</h2>
         <p>I used a z-index of -1 to put the monarch at the bottom left behind everything else on the page. Pretty cool!</p>
+        <h2>Media Queries for Responsive Design</h2>
+        <p class="test">This media query specifies a Comic Sans font-family if the viewer is on a screen size of at least 800px (so not a phone). If this is in Comic Sans, the screen is at least 800 pixels wide. If it's in Trebuchet, the screen is less than 800px. </p>
+        <p><em>However,</em> when I collapse the screen, it still stays in Comic Sans. Not sure why? I double-checked the code.</p>
+        <h2>Min- and Max- Width and Height</h2>
+        <p class="maxwidthheight">This paragraph scrolls when the height reaches > 100px. And it should always maintain at least a min width of 100px. 100px is not very big!</p>
+        <div class="nudgeleft">
+            <h2>Final Touches: Stuff at the Top and Meta Description</h2>
+            <p>To polish and finish up this project following along with the book, I added: DOCTYPE, language, meta charset, and a meta description.</p>
+        </div>
   </body>
 </html>
