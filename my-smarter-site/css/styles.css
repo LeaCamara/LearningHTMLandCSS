@@ -215,24 +215,24 @@ p.clearFloat {
   clear: both;
 }
 
-div#navbar {
+div#vertical-navbar {
   clear: both;
   /* background-color: dimgray; */
   display: inline-block;
 }
 
-div#navbar ul {
+div#vertical-navbar ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-div#navbar ul li {
+div#vertical-navbar ul li {
   /* padding: 0 1em .3em 1em; */
   background-color: dimgray;
   margin: 0 0 .25em 0;
 }
 
-div#navbar ul li a {
+div#vertical-navbar ul li a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   font-weight: 900;
@@ -240,4 +240,49 @@ div#navbar ul li a {
   color: white;
   display: block;
   padding: .35em;
+}
+
+div#horizontal-navbar {
+  /* clear: both; */
+  /* display: inline-block; */
+  width: 100%;
+}
+
+div#horizontal-navbar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div#horizontal-navbar ul li {
+  /* padding: 0 1em .3em 1em; */
+  /* margin: 0 0 .25em 0; */
+  /* background-color: dimgray; */
+  text-align: center;
+  display: inline;
+  width: 30%;
+  float: left;
+  margin-right: .1em;
+  /* margin-right: 0 auto 0 auto; */
+}
+
+div#horizontal-navbar ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .4em;;
+}
+
+li.changebackground {
+  background-color: turquoise;
+}
+
+li.changebackground:hover {
+  background-color: lightblue;
+}
+
+li.changebackground:active {
+  background-color: darkblue;
 }
