@@ -88,7 +88,7 @@ img.move_right {
 }
 
 img.smack-in-the-middle {
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 img.wrap-to-the-right {
@@ -143,7 +143,7 @@ the legend and fieldset.
 
 form {
   width: 50%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 1.2em;
 }
@@ -253,7 +253,7 @@ div#horizontal-navbar {
   /* clear: both; */
   /* display: inline-block; */
   width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 div#horizontal-navbar ul {
@@ -306,7 +306,7 @@ body {
 
 div.lesswideandtotheright {
   width: 50%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   position: relative;
   left: 20%;
   z-index: 0;
@@ -315,7 +315,7 @@ div.lesswideandtotheright {
 p.evenlesswide {
   width: 50%;
   text-align: center;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 div.z-index {
@@ -335,7 +335,7 @@ p.maxwidthheight {
   max-width: 100px;
   max-height: 100px;
   overflow: scroll;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 div.nudgeleft {
