@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Site | Learning HTML and CSS</title>
+    <meta name="description" content="Examples of basic coding in HTML and CSS.">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div id="invisible-header">
+        <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47">
+        <h1>A Personal Reference to HTML and CSS Examples</h1>
+        <h2>Starting Out Practicing with <em>A Smarter Way to Learn HTML and CSS</em> by Mark Myers<br>
+        And Including Other Examples As I Continue to Learn</h2>
+        <p class="clearFloat"></p>
+        <br>
+    </div>
+    <div id="header">
+        <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47">
+        <h1>A Personal Reference to HTML and CSS Examples</h1>
+        <h2>Starting Out Practicing with <em>A Smarter Way to Learn HTML and CSS</em> by Mark Myers<br>
+        And Including Other Examples As I Continue to Learn</h2>
+        <p class="clearFloat"></p>
+        <br>
+    </div>
+    <div>
+        <h2 id="back-to-top">Practice with <em>A Smarter Way to Learn</em>:</h2>
+        <p class="Georgia">This is a multi-line paragraph. These are my first baby steps starting to learn HTML and CSS, by reading and going through coding challenges here, as well as completing online exercises, in the <i>A Smarter Way to Learn HTML and CSS</i> book by Mark Myers. I think the short chapers, writing style, and coding practice works pretty well for me. After I'm done writing this paragraph I'm going to check to see how it looks in the browser. It turned out it wasn't really "multi-line," after all, so here's some more text. The right edges of this paragraph will be pretty ragged because it is not justified. And the first line, by default, is not indented.</p>
+        <p class="important">Warning: we have no slow lorises here.</p>
+        <h2 class="typewriter">This heading is in typewriter text.</h2>
+        <p class="typewriter">This paragraph is also in typewriter text (and <span class="red">RED!</span>)</p>
+        <h2 class="italic">Heading in Italics</h2>
+        <p> Sample text with <i>i for italics</i>, text with <em>em for italics</em>, text with <b>b for bold</b> and, lastly, <strong>strong for bold</strong>. And also <span class="emphasized">span using "emphasized" class.</span></p>
+        <p class="more-space">This paragraph should have extra space between the letters, even more space between the words, and should be approx. double-spaced, like you would do when writing a paper for school.</p>
+        <h3>All H3 Headings Are Centered</h3>
+        <p class="justify">This paragraph is justified so it's not ragged on the right edge anymore! But you wouldn't be able to tell with only one short sentence. There needs to be more text to stretch across the page and wrap to the next line to see the difference between text that is the default left-align, versus text where the "justify" class is specified. I remember learning about "justify" in my first Word Processing class in high school (10th grade, I believe). It turns out that was a good class to take, who knew? At the time, the Internet barely existed. I can't imagine being in high school now, with so much technology at your fingertips.</p>
+        <p class="indent">Here's a paragraph that indents the first line. The second line, where the text has wrapped around, will be left-aligned. I just need to write enough text to make it wrap to a second line so that we can see the difference, that the first line is in fact indented, and that the second line is pushed all the way to the left. Did it work? Yes!</p>
+        <blockquote><p>This is a paragraph inside blockquote tags, so this text should look like a quote from a book or a famous speech or something. I mean, it is pretty memorable and should definitely be taken as special and authoritative, to be quoted for years to come, by future generations. It probably won't be delivered in an address by a President to the nation, but, who knows? Maybe it will be delivered in an address by a software teacher to his beginner coding class. Queue: DELUSIONS OF GRANDEUR. And enough text to make a blockquote. I hope.</p></blockquote>
+        <p class="extra_whitespace">Here's a paragraph that has a 2em margin on all sides, adding extra whitespace to every side. You can also specify just one side that needs extra space, like margin-top. The best way to add extra space between paragraphs it to add it to margin-bottom. The default is 0, so anything more than that is extra. This paragraph is similar to the blockquote style, but the extra space I specified, 2em, looks to be a little less than the default extra space of the blockquote tag.</p>
+        <h2 class="border">Heading: 5px Ridge Turquoise Padding</h2>
+        <h4>H4 Heading Grouped with Paragraph; Both Are Centered</h4>
+        <p class="center">This paragraph is grouped with the h4 heading above, and both are centered. P.S. It seems kind of weird that headings aren't automatically centered...</p>
+        <h2 id="orange">Heading with ID #Orange</h2>
+        <div id="special">
+          <h2>Heading with Special ID</h2>
+          <h3>(And all paragraphs within this Div ID #special are double-size, 2em)</h3>
+          <p>Both the heading above and this paragraph are children of a div with the ID, "special," since this is unique and will appear only once on this page. There are 3em margins on the left and right, and the font-family starts with Arial.... So.... why is this text serif and not Arial/sans-serif?? It does look like it has a right margin, though, so that's good. I tried a hard refresh, but that didn't work. I figured out that it was because I had specified above that all paragraphs would have the Georgia font. So I made that a class instead, which enabled this div inheritance to work. It still seems strange how the paragraph styling way up above overrode the div styling, though.</p>
+        </div>
+        <h2>Working with Images</h2>
+        <img class="block_img" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="250" height="197">
+        <img class="block_img move_right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+        <img class="block_img smack-in-the-middle" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+        <p>Practice placing an image in between the heading above and this paragraph. It should be aligned all the way to the left. But now we used CSS to make it a block element and then copied it. And added alt tags and resized the 2nd one to be half the size of the first one. And moved the 2nd one a little to the right by adding margin-left. And now we have a 3rd one that's centered.</p>
+        <img class="wrap-to-the-right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+        <p>Here's a short paragraph to go to the right side of the loris image, which is floating left.</p>
+        <p class="clears-the-wrap">Here's a short paragraph that should clear the wrap and be on the next line below the image.</p>
+        <img class="wrap-to-the-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+        <p>Here's a short paragraph to go to the left side of the loris image, which is floating right.</p>
+        <p class="clears-the-wrap">Here's a short paragraph that should clear the wrap and be on the next line below the image.</p>
+        <h2>Working with Links</h2>
+        <a href="http://www.stackoverflow.com">Link to Stack Overflow Homepage</a>
+        <p>The link works! But it opens in the same window.</p>
+        <p>Here's a paragraph that takes the user to the <a href="http://www.asmarterwaytolearn.com/why-exercises.html">Why Exercises</a> page at asmarterwaytolearn.com, also in the same window. (Yay, it works!)</p>
+        <p>Here's a link to go <a href="#back-to-top">Back to the Top</a> of this page, by assigning an ID to the h1 tag at the very top of this page.</p>
+        <p>Here's a link to the <a href="http://www.asmarterwaytolearn.com" target="_blank">author's website</a> that will open in a new window (finally! And it works!)</p>
+        <p>Below is some Javascript to open a small window, like you often see on sites for Help topics, etc., that will lay on top and appears more like an addendum to the main window. It should work when you click the paragraph, but it's not for some reason. It opens in a new window, but not a small, separate one that lays on top. I might have to wait to figure this out when learning Javascript.</p>
+        <p id="helpWindow"><a href="#helpWindow">Small Window to Open Help Topics</a></p>
+        <script type="text/javascript">
+        document.getElementById("helpWindow").onclick = helpWindow;
+        function helpWindow() {
+            var w = window.open("practice.html", "",
+        "width=100,height=200,left=350,top=300");
+        }
+        </script>
+        <p>Now we've made all links gray and, when hovered over, orange. If I were going to use the hexadecimal type in the css file, it would be color: #b8860b; for example.</p>
+        <p>And here's a Robo Guy image. When you click on it, it will take you to asmarterwaytolearn.com in a new window using target="_blank" on the end of the anchor tag:</p>
+        <a href="http://www.asmarterwaytolearn.com" target="_blank"><img src="http://www.asmarterwaytolearn.com/robo_guy.png"></a>
+        <h2>Working with Lists</h2>
+        <h3>A Few Unusual Things About My Siblings</h3>
+        <ul>
+            <li>There are 6 of us. (That's a lot.)</li>
+            <li>We come in 3 sets of 2.</li>
+            <li>Including TWO sets of twins.</li>
+            <li>The first of each set is <i>left-handed.</i> (That's 50%! Which is A LOT. Especially when only about 10% of the population is left-handed. And we definitely live in a right-handed world.</li>
+            <li>The second of each set is <i>right-handed.</i></li>
+        </ul>
+        <h3>Gender and First Initial in Order of Birth</h3>
+        <ol>
+        <h4>Set #1 (14 Months Apart)</h4>
+            <li>Girl, A</li>
+            <li>Boy, K</li>
+        <h4>Set #2 (Fraternal Twins)</h4>
+            <li>Girl, L</li>
+            <li>Girl, D</li>
+        <h4>Set #3 (Fraternal Twins)</h4>
+            <li>Girl, M</li>
+            <li>Boy, J</li>
+            <li>There is no #7, but I'm going to add some more text here to show the difference between having the list-style-position set to outside vs. inside. I definitely like outside (like this) much better.</li>
+        </ol>
+
+        <!--
+        The html below creates a form where users can send their name and a message.
+        They can also provide additional info via radio buttons, checkboxes, and a selection list.
+        -->
+        <h2>Working with Forms</h2>
+        <form>
+            <fieldset>
+                <legend>Name and Message</legend>
+                First Name:
+                <br>
+                <input type="text" name="firstName" size="25" maxlength="40">
+                <br><br>
+                Message:
+                <br>
+                <textarea name="message" rows="4" cols="30"></textarea>
+                <br><br>
+                <input type="submit" value="Send message">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Info</legend>
+                How did you find us?
+                <br>
+                <label><input type="radio" name="referral" value="Word of Mouth" checked="checked"> Word of Mouth</label>
+                <label><input type="radio" name="referral" value="Advertisement"> Advertisement</label>
+                <br><br>
+                What do you think of this page so far?
+                <br>
+                <input type="checkbox" name="feedback" id="awesome" value="awesome" checked="checked"><label for="awesome">Awesome!</label>
+                <input type="checkbox" name="feedback" id="okay" value="okay"> <label for="okay">It's Okay</label>
+                <input type="checkbox" name="feedback" id="terrible" value="terrible"><label for="terrible">Terrible</label>
+                <br><br>
+                Your state: <br>
+                <select name="currentState">
+                    <option value="selectState" select="selected">Select a State</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+        </form>
+        <div id="width20">
+            <h2>Working with Layouts</h2>
+            <p>
+                Now we're experimenting with layouts. So the parent div of this header and paragraph is 20% wide and centered. (And doing this reminded me that the id name cannot start with a number.)
+            </p>
+        </div>
+        <div id="on-the-left">
+            <p>
+                Here's the first paragraph inside the first div that will go to the left of the page. I'll add a border to see it more clearly. And some padding to add space on the inside.
+            </p>
+        </div>
+        <div id="on-the-right">
+            <p>
+                Here's the second paragraph inside the first div that will go to the right of the page, so that these two divs site side by side on the page with some whitespace between them.
+            </p>
+        </div>
+        <br>
+        <h2>Working with Headers</h2>
+        <p>The first header I created (C65) covered over the beginning text. So I put all the non-header text inside another div, and that still didn't fix it. He says we'll do with that two chapters from now. (Update: We created a spacer header to fix this.)</p>
+        <h2>Working with Vertical Navbars</h2>
+        <div id="vertical-navbar">
+            <ul>
+                <li><a href="https://www.google.com/">Google</a></li>
+                <li><a href="https://www.google.com/maps">Google Maps</a></li>
+                <li><a href="https://photos.google.com/">Google Photos</a></li>
+            </ul>
+        </div>
+        <p class="clears-the-wrap">
+        <h2>Working with Horizontal Navbars</h2>
+        <div id="horizontal-navbar">
+            <ul>
+                <li class="changebackground"><a href="https://www.google.com/">Google</a></li>
+                <li class="changebackground"><a href="https://www.google.com/maps">Google Maps</a></li>
+                <li class="changebackground"><a href="https://photos.google.com/">Google Photos</a></li>
+            </ul>
+        </div>
+        <p class="clearFloat">
+        <h2>Ems vs. Percentages vs. Pixels</h2>
+        <div class="lesswideandtotheright">
+            <p class="evenlesswide">This is a p with the class "evenlesswide". Ems and percentages are more responsive and preferable in most cases, but pixels are good for images, borders, and positioning.</p>
+            <p>These are p's that are just the width of the div. I still need to get some clarification on the different types of code used to center things, since the syntax is different depending on the type of element (divs, paragraphs, images, text, etc).
+            <br>
+            If it's a paragraph, a heading, or text inside a navbar div, use text-align: center;
+            <br>
+            If it's a div, image, or form: use margin: 0 auto 0 auto;
+            <br>
+            Or both. For the "evenlesswide" paragraph above, I did text-align: center; to center the text in the paragraph. Then margin: 0 auto 0 auto; to center the paragraph inside the div.
+            </p>
+            <p><em>However,</em> there seems to be some inherited styling somewhere that makes the browser think that the width of the horizontal navbar is narrower than it is. But I haven't been able to find it yet, even after comparing my code with the author's.... Hmmm...</p>
+        </div>
+        <h2>Relative and Static Positioning</h2>
+        <p>Both can create some overlap. Relative positioning places elements a certain distance from their normal position. Absolute and fixed/static positioning places elements a certain distance from the edges of the browser window.
+        The div above is getting nudged more to the right with relative positioning.</p>
+        <div class="z-index">
+            <img src="http://www.asmarterwaytolearn.com/monarch.jpg" alt="monarch at the bottom">
+        </div>
+        <h2>Z-Index</h2>
+        <p>I used a z-index of -1 to put the monarch at the bottom left behind everything else on the page. Pretty cool!</p>
+        <h2>Media Queries for Responsive Design</h2>
+        <p class="test">This media query specifies a Comic Sans font-family if the viewer is on a screen size of at least 800px (so not a phone). If this is in Comic Sans, the screen is at least 800 pixels wide. If it's in Trebuchet, the screen is less than 800px. </p>
+        <p><em>However,</em> when I collapse the screen, it still stays in Comic Sans. Not sure why? I double-checked the code.</p>
+        <h2>Min- and Max- Width and Height</h2>
+        <p class="maxwidthheight">This paragraph scrolls when the height reaches > 100px. And it should always maintain at least a min width of 100px. 100px is not very big!</p>
+        <div class="nudgeleft">
+            <h2>Final Touches: Stuff at the Top and Meta Description</h2>
+            <p>To polish and finish up this project following along with the book, I added: DOCTYPE, language, meta charset, and a meta description.</p>
+        </div>
+        <h2>Practice with Additional Learning Resources:</h2>
+        <h3>A Coffin&mdash;is a Small Domain</h3>
+        <p>A Coffin&mdash;is a small Domain,<br> Yet able to contain<br> A Citizen of Paradise<br> In it diminished Plane.</p>
+        <p>A Grave&mdash;is a restricted Breadth&mdash;<br>Yet ampler than the Sun&mdash;<br>And all the Seas He populates<br>And Lands He looks upon<p>
+        <p>To Him who on its small Repose<br>Bestows a single Friend&mdash;<br>Circumference without Relief&mdash;<br>Or Estimate&mdash;or End—<br></p>
+        <p><em>Emily Dickinson</em></p>
+  </body>
+</html>

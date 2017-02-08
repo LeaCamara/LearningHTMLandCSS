@@ -1,0 +1,345 @@
+p.Georgia {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: .75em;
+}
+
+h1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+h2, p {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p.important {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.typewriter {
+  font-family: "Courier New", Courier, Monospace;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.emphasized {
+  font-style: italic;
+}
+
+.red {
+  color: red;
+}
+
+p.more-space {
+  letter-spacing: .2em;
+  word-spacing: 1.5em;
+  line-height: 2.4em;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+p.justify {
+  text-align: justify;
+}
+
+p.indent {
+  text-indent: 1em;
+}
+
+blockquote {
+  font-size: .85em;
+  color: dimgray;
+}
+
+p.extra_whitespace {
+  margin: 2em;
+}
+
+.border {
+  border: 5px ridge turquoise;
+  padding: .5em;
+}
+
+h4, p.center {
+  text-align: center;
+}
+
+h2#orange {
+  color: orange;
+}
+
+div#special {
+  margin-left: 3em;
+  margin-right: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img.block_img {
+  display: block;
+}
+
+img.move_right {
+  margin-left: 1.5em;
+}
+
+img.smack-in-the-middle {
+  margin: 0 auto;
+}
+
+img.wrap-to-the-right {
+  float: left;
+  margin: 0 .75em .5em 0;
+}
+
+img.wrap-to-the-left {
+  float: right;
+  margin: 0 0 .5em .75em;
+}
+
+p.clears-the-wrap {
+  clear: both;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: orange;
+}
+
+ul {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: darkmagenta;
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+ol {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: darkblue;
+  list-style-position: outside;
+  list-style-type: decimal-leading-zero;
+}
+
+li {
+  margin: 1.5em;
+}
+
+div#special > p {
+  font-size: 2em;
+}
+
+/*
+The CSS below specifies styling for the form as a whole.
+It also specifies styling for specific input types, as well as
+the legend and fieldset.
+*/
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.2em;
+}
+
+input[type="text"], textarea {
+  font-size: 2em;
+  padding: .2em;
+  border: 3px solid turquoise;
+}
+
+input[type="submit"] {
+  font-size: 2.5em;
+}
+
+legend {
+  font-weight: 700;
+}
+
+fieldset {
+  border: 5px solid darkmagenta;
+  color: darkblue;
+}
+
+div#width20 {
+  width: 20%;
+  margin: 1.5em auto 1.5em auto;
+  background-image: url("http://www.asmarterwaytolearn.com/gray-gradient-slice.png");
+  background-repeat: repeat-x;
+}
+
+div#on-the-left {
+  width: 54%;
+  float: left;
+  border: 2px solid purple;
+  padding-left: .8em;
+}
+
+div#on-the-right {
+  width: 42%;
+  float: right;
+  border: 2px solid purple;
+  padding-left: .8em;
+}
+
+div#header {
+  width: 100%;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: left;
+  padding: .5%;
+  background-color: paleturquoise;
+  font-family: Trebuchet, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  color: dimgray;
+  z-index: 2;
+}
+
+div#invisible-header {
+  width: 100%;
+  visibility: hidden;
+}
+
+div#header h1, div#invisible-header h1 {
+  padding-top: 1%;
+}
+div#header img, div#invisible-header img {
+  float: left;
+  margin: 1em;
+  margin-top: 1.85em;
+}
+
+p.clearFloat {
+  clear: both;
+}
+
+div#vertical-navbar {
+  clear: both;
+  /* background-color: dimgray; */
+  display: inline-block;
+}
+
+div#vertical-navbar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div#vertical-navbar ul li {
+  /* padding: 0 1em .3em 1em; */
+  background-color: dimgray;
+  margin: 0 0 .25em 0;
+}
+
+div#vertical-navbar ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .35em;
+}
+
+div#horizontal-navbar {
+  /* clear: both; */
+  /* display: inline-block; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+div#horizontal-navbar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div#horizontal-navbar ul li {
+  /* padding: 0 1em .3em 1em; */
+  /* margin: 0 0 .25em 0; */
+  /* background-color: dimgray; */
+  text-align: center;
+  display: inline;
+  width: 25%;
+  float: left;
+  margin-right: .05em;
+}
+
+div#horizontal-navbar ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .4em;;
+}
+
+li.changebackground {
+  background-color: turquoise;
+}
+
+li.changebackground:hover {
+  background-color: lightblue;
+}
+
+li.changebackground:active {
+  background-color: darkblue;
+}
+
+/* to add a monarch as a background img on the bottom right: */
+
+body {
+  background-ima  ge: url("http://www.asmarterwaytolearn.com/monarch.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+div.lesswideandtotheright {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  left: 20%;
+  z-index: 0;
+}
+
+p.evenlesswide {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.z-index {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media only screen and (min-device-width: 800px) {
+ p.test {
+   font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+}
+
+p.maxwidthheight {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+div.nudgeleft {
+  position: relative;
+  bottom: 0%;
+  left: 10%;
+}
