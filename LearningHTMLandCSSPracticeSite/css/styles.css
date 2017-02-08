@@ -39,7 +39,7 @@ p.more-space {
   line-height: 2.4em;
 }
 
-h2, h3 {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -115,7 +115,7 @@ a:hover {
 
 ul {
   font-family: "Trebuchet MS", Arial, sans-serif;
-  color: darkmagenta;
+  color: seagreen;
   list-style-position: inside;
   list-style-type: square;
 }
