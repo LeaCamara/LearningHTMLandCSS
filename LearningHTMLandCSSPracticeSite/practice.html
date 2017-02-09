@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <!-- This meta tag technically isn't necessary anymore, because HTML5 now defaults to character set UTF-8, which includes almost all of the characters and symbols in the world.  -->
     <title>Practice Site | Learning HTML and CSS</title>
     <meta name="description" content="Examples of basic coding in HTML and CSS.">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
     <div id="invisible-header">
-        <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47">
+        <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47" />
         <h1>A Personal Reference to HTML and CSS Examples</h1>
         <h2>Starting Out Practicing with <em>A Smarter Way to Learn HTML and CSS</em> by Mark Myers<br>
         And Including Other Examples As I Continue to Learn</h2>
@@ -16,7 +17,7 @@
         <br>
     </div>
     <div id="header">
-        <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47">
+        <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47" />
         <h1>A Personal Reference to HTML and CSS Examples</h1>
         <h2>Starting Out Practicing with <em>A Smarter Way to Learn HTML and CSS</em> by Mark Myers<br>
         And Including Other Examples As I Continue to Learn</h2>
@@ -47,14 +48,14 @@
           <p>Both the heading above and this paragraph are children of a div with the ID, "special," since this is unique and will appear only once on this page. There are 3em margins on the left and right, and the font-family starts with Arial.... So.... why is this text serif and not Arial/sans-serif?? It does look like it has a right margin, though, so that's good. I tried a hard refresh, but that didn't work. I figured out that it was because I had specified above that all paragraphs would have the Georgia font. So I made that a class instead, which enabled this div inheritance to work. It still seems strange how the paragraph styling way up above overrode the div styling, though.</p>
         </div>
         <h2>Working with Images</h2>
-        <img class="block_img" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="250" height="197">
-        <img class="block_img move_right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
-        <img class="block_img smack-in-the-middle" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+        <img class="block_img" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="250" height="197" />
+        <img class="block_img move_right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99" />
+        <img class="block_img smack-in-the-middle" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99" />
         <p>Practice placing an image in between the heading above and this paragraph. It should be aligned all the way to the left. But now we used CSS to make it a block element and then copied it. And added alt tags and resized the 2nd one to be half the size of the first one. And moved the 2nd one a little to the right by adding margin-left. And now we have a 3rd one that's centered.</p>
-        <img class="wrap-to-the-right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+        <img class="wrap-to-the-right" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99" />
         <p>Here's a short paragraph to go to the right side of the loris image, which is floating left.</p>
         <p class="clears-the-wrap">Here's a short paragraph that should clear the wrap and be on the next line below the image.</p>
-        <img class="wrap-to-the-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99">
+        <img class="wrap-to-the-left" src="http://www.asmarterwaytolearn.com/loris.jpg" alt="loris" width="125" height="99" />
         <p>Here's a short paragraph to go to the left side of the loris image, which is floating right.</p>
         <p class="clears-the-wrap">Here's a short paragraph that should clear the wrap and be on the next line below the image.</p>
         <h2>Working with Links</h2>
@@ -74,7 +75,7 @@
         </script>
         <p>Now we've made all links gray and, when hovered over, orange. If I were going to use the hexadecimal type in the css file, it would be color: #b8860b; for example.</p>
         <p>And here's a Robo Guy image. When you click on it, it will take you to asmarterwaytolearn.com in a new window using target="_blank" on the end of the anchor tag:</p>
-        <a href="http://www.asmarterwaytolearn.com" target="_blank"><img src="http://www.asmarterwaytolearn.com/robo_guy.png"></a>
+        <a href="http://www.asmarterwaytolearn.com" target="_blank"><img src="http://www.asmarterwaytolearn.com/robo_guy.png" alt="robo guy" /></a>
         <h2>Working with Lists</h2>
         <h3>A Few Unusual Things About My Siblings</h3>
         <ul>
@@ -192,7 +193,7 @@
         <p>Both can create some overlap. Relative positioning places elements a certain distance from their normal position. Absolute and fixed/static positioning places elements a certain distance from the edges of the browser window.
         The div above is getting nudged more to the right with relative positioning.</p>
         <div class="z-index">
-            <img src="http://www.asmarterwaytolearn.com/monarch.jpg" alt="monarch at the bottom">
+            <img src="http://www.asmarterwaytolearn.com/monarch.jpg" alt="monarch at the bottom" />
         </div>
         <h2>Z-Index</h2>
         <p>I used a z-index of -1 to put the monarch at the bottom left behind everything else on the page. Pretty cool!</p>
@@ -214,7 +215,7 @@
         <p><em>Emily Dickinson</em></p>
         <h2>Images</h2>
         <p>You can right click on an image, then Open Image in New Tab, to view image source, which you can then link to (even though the src url might be REALLY long):<br> 
-        <img src="http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2012/12/1952_hopper-grace_large.jpeg" alt="Grace Hopper" height="275" width="225"></p>
+        <img src="http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2012/12/1952_hopper-grace_large.jpeg" alt="Grace Hopper" height="275" width="225" /></p>
         <p>P.S. Alt tags are super important for SEO.</p>
         <p>Images should be:</p>
         <ul>
@@ -224,7 +225,7 @@
         <h2>Links</h2>
         <p>To open a URL in a new tab, use the target attribute with <em>target="_blank"</em>, like this: <a href="http://skillcrush.com" target="_blank">Check out Skillcrush</a></p>
         <p>Logo with a link:</p>
-        <a href="http://facebook.com" target="_blank"><img src="https://images.seeklogo.net/2011/06/facebook-icon-logo-vector-400x400.png" alt="Facebook" height="50" width="50"></a>
+        <a href="http://facebook.com" target="_blank"><img src="https://images.seeklogo.net/2011/06/facebook-icon-logo-vector-400x400.png" alt="Facebook" height="50" width="50" /></a>
         <h2>Using 6 Common Semantic HTML Tags</h2>
         <ul>
             <li>&lt;Header&gt;</li>
@@ -235,7 +236,7 @@
             <li>&lt;Footer&gt;</li>
         </ul>
         <h3>Skillcrush Semantic Blog Post Mockup:</h3>
-        <img src="https://s3.amazonaws.com/media.skillcrush.com/uploads/2016/02/23235742/blog-post-mockup-450.png" alt="Skillcrush Semantic Blog Post Mockup">
+        <img src="https://s3.amazonaws.com/media.skillcrush.com/uploads/2016/02/23235742/blog-post-mockup-450.png" alt="Skillcrush Semantic Blog Post Mockup" />
         <h2>iFrames for Embedding</h2>
         <h3>Use an &lt;iFrame&gt; tag for embedding:</h3>
         <ul>
