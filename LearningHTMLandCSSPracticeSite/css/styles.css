@@ -343,3 +343,31 @@ div.nudgeleft {
   bottom: 0%;
   left: 10%;
 }
+
+#barrio {
+  font-family: 'Barrio', cursive;
+}
+
+#sansita {
+  font-family: 'Sansita', sans-serif;
+}
+
+#bitter {
+  font-family: 'Bitter';
+}
+
+#fontvariant {
+  font-variant: small-caps;
+}
+
+#texttransformcaps {
+  text-transform: capitalize;
+}
+
+#texttransformupper {
+  text-transform: uppercase;
+}
+
+#texttransformlower {
+  text-transform: lowercase;
+}
