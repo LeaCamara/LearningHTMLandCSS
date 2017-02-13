@@ -9,28 +9,29 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
-    <div id="invisible-header">
+    <header id="invisible-header">
         <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47" />
-        <h1>My Personal Reference to HTML and CSS Examples</h1>
+        <h1>Welcome to my Practice Site and Personal Reference to HTML &amp; CSS Examples</h1>
         <h2>Starting Out as a TOTAL NOOB Practicing with <em>A Smarter Way to Learn HTML and CSS</em> by Mark Myers<br>
         And Including Other Examples (And Getting Better!) As I Continue to Learn</h2>
         <p class="clearFloat"></p>
         <br>
-    </div>
-    <div id="header">
+    </header>
+    <header id="header">
         <img src="http://www.asmarterwaytolearn.com/loris_50.jpg" alt="another loris pic" width="40" height="47" />
-        <h1>My Personal Reference to HTML and CSS Examples</h1>
+        <h1>Welcome to my Practice Site and Personal Reference to HTML &amp; CSS Examples</h1>
         <h2>Starting Out as a TOTAL NOOB Practicing with <em>A Smarter Way to Learn HTML and CSS</em> by Mark Myers<br>
         And Including Other Examples (And Getting Better!) As I Continue to Learn</h2>
         <p class="clearFloat"></p>
         <br>
-    </div>
-    <div>
+    </header>
+
+    <div id="main-content">
         <h2 id="back-to-top">Practice with <em>A Smarter Way to Learn</em>:</h2>
         <p class="Georgia">This is a multi-line paragraph. These are my first baby steps starting to learn HTML and CSS, by reading and going through coding challenges here, as well as completing online exercises, in the <i>A Smarter Way to Learn HTML and CSS</i> book by Mark Myers. I think the short chapers, writing style, and coding practice works pretty well for me. After I'm done writing this paragraph I'm going to check to see how it looks in the browser. It turned out it wasn't really "multi-line," after all, so here's some more text. The right edges of this paragraph will be pretty ragged because it is not justified. And the first line, by default, is not indented.</p>
-        <p class="important">Warning: we have no slow lorises here.</p>
+        <p class="important">Warning: Mark Myers is totally obsessed with lorises!</p>
         <h2 class="typewriter">This heading is in typewriter text.</h2>
-        <p class="typewriter">This paragraph is also in typewriter text (and <span class="red">RED!</span>)</p>
+        <p class="typewriter">This paragraph is also in typewriter text (and <span class="standout">RED!</span>)</p>
         <h2 class="italic">Heading in Italics</h2>
         <p> Sample text with <i>i for italics</i>, text with <em>em for italics</em>, text with <b>b for bold</b> and, lastly, <strong>strong for bold</strong>. And also <span class="emphasized">span using "emphasized" class.</span></p>
         <p class="more-space">This paragraph should have extra space between the letters, even more space between the words, and should be approx. double-spaced, like you would do when writing a paper for school.</p>
@@ -248,12 +249,12 @@
             <li>Images</li>
             <li>And More!</li>
         </ul>
-        <h3>For Google or YouTube:</h3>
+        <h3>For Google, YouTube, Soundcloud, Etc:</h3>
         <ol>
-            <li>Go to the map or video you want.</li>
-            <li>Click Share.</li>
+            <li>Go to the map, video, or audio you want.</li>
             <li>Click Share.</li>
             <li>Select the Embed option, and there’s the code you need!</li>
+            <li>Now paste it into your HTML!</li>
         </ol>
         <p>I absolutely love this video of Grace Hopper - she's so awesome! - so this will be my very first embedded YouTube video!</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/1-vcErOPofQ" frameborder="0" allowfullscreen></iframe>
@@ -263,7 +264,7 @@
         <iframe width="50%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/213841456&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
         <h2>Fun with Text</h2>
         <p id="fontvariant">Use font-variant for small caps.</p>
-        <p>Use text-transform to make something <span id="texttransformcaps" class="red">capitalized like a legit title</span> or <span id="texttransformupper" class="red">all uppercase!!!</span> or even <span id="texttransformlower" class="red">all lowercase</span>.</p>
+        <p>Use text-transform to make something <span id="texttransformcaps" class="standout">capitalized like a legit title</span> or <span id="texttransformupper" class="standout">all uppercase!!!</span> or even <span id="texttransformlower" class="standout">all lowercase</span>.</p>
         <h2>Google Fonts</h2>
         <ul>
             <li id="barrio">Barrio</li>
@@ -280,5 +281,11 @@
             Can also use actual image url. Or no-repeat. 10px 10px positions it 10px from both x and y axis. #ffffe0 is the background color for any area the image doesn't cover.
             </p>
         </div>
+    </div>
+
+    <div id="sidebar">
+        <p>Sidebar floating left next to main content, with overflow: auto; so that it will expand to fit content. Floating removes content from the normal document flow.</p>
+    </div>
+
   </body>
 </html>

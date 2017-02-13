@@ -1,3 +1,35 @@
+/* to add a monarch as a background img on the bottom right: */
+
+body {
+  background-ima  ge: url("http://www.asmarterwaytolearn.com/monarch.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+  z-index: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+
+#sidebar {
+  width: 10%;
+  float: left;
+  border: 2px solid darkgray;
+  background: lightgray;
+  overflow: auto;
+  padding: .5%;
+  margin-top: 2%;
+}
+
+#main-content {
+  width: 70%;
+  float: left;
+  border: 2px solid lightgray;
+  margin: 2% 2.5% 0 2.5%;
+  padding: .5%;
+  background: seashell;
+}
+
 p.Georgia {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: .75em;
@@ -29,7 +61,7 @@ p.important {
   font-style: italic;
 }
 
-.red {
+.standout {
   color: red;
 }
 
@@ -188,7 +220,7 @@ div#on-the-right {
   padding-left: .8em;
 }
 
-div#header {
+#header {
   width: 100%;
   /* position: absolute; */
   position: fixed;
@@ -204,15 +236,15 @@ div#header {
   z-index: 2;
 }
 
-div#invisible-header {
+#invisible-header {
   width: 100%;
   visibility: hidden;
 }
 
-div#header h1, div#invisible-header h1 {
+#header h1, #invisible-header h1 {
   padding-top: 1%;
 }
-div#header img, div#invisible-header img {
+#header img, #invisible-header img {
   float: left;
   margin: 1em;
   margin-top: 1.85em;
@@ -294,16 +326,6 @@ li.changebackground:active {
   background-color: darkblue;
 }
 
-/* to add a monarch as a background img on the bottom right: */
-
-body {
-  background-ima  ge: url("http://www.asmarterwaytolearn.com/monarch.jpg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-attachment: fixed;
-  z-index: 0;
-}
-
 div.lesswideandtotheright {
   width: 50%;
   margin: 0 auto;
@@ -321,7 +343,7 @@ p.evenlesswide {
 div.z-index {
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: -1;
 }
 
